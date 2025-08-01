@@ -76,6 +76,6 @@ Use these test users to explore each tier:
 3. Add the same environment variables in your Vercel project settings.
 4. Deploy!
 
-Your app will be live at ``.
+Your app will be live at `https://psypher-one.vercel.app/`.
 
 
