@@ -40,10 +40,12 @@ export default function UpgradePage() {
 
             await user.reload();
             router.push('/events');
-        } catch (err: any) {
+        } catch (err: unknown) {
             console.error(err);
-            alert('Upgrade failed: ' + err.message);
+            const message = err instanceof Error ? err.message : 'Upgrade failed';
+            alert(message);
         }
+
     };
 
     return (
